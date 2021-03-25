@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Сергей Подшиблов](https://up.htmlacademy.ru/adaptive/22/user/1162909).
-* Наставник: `Неизвестно`.
+- Студент: [Сергей Подшиблов](https://up.htmlacademy.ru/adaptive/22/user/1162909).
+- Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor).
 
 ---
 
