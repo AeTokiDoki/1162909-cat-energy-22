@@ -16,61 +16,59 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__item--active" href="form.html">Подбор программы</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-form">
-      <div class="main-form__wrapper">
+      <header class="main-form__wrapper">
         <h1 class="main-form__title">Подбор программы</h1>
         <p class="main-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      </div>
+      </header>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__list">
-          <fieldset class="form__item">
-            <div class="visually-hidden">Информация о питомце</div>
-            <p class="form__point">
-              <label for="name">Имя:<sup>*</sup></label>
-              <input class="form__field form__field--name" type="text" id="name" name="cat-name" placeholder="Барсик">
-            </p>
-            <p class="form__point">
-              <label for="weight">Вес (кг):<sup>*</sup></label>
-              <input class="form__field" type="number" id="weight" name="cat-weight" placeholder="7">
-            </p>
-            <p class="form__point">
-              <label class="form__label" for="age">Возраст (лет):</label>
-              <input class="form__field" type="number" id="age" name="age" placeholder="7">
-            </p>
-          </fieldset>
-          <fieldset class="form__item">
-            <div class="visually-hidden">Цель программы</div>
-            <ul class="form__sublist">
-              <li class="form__option">
-                <input class="form__radio" type="radio" name="version" id="slim-program" checked>
-                <label for="slim-program">Похудение</label>
-              </li>
-              <li class="form__option">
-                <input class="form__radio" type="radio" name="version" id="pro-program">
-                <label for="pro-program">Набор массы</label>
-              </li>
-              <li class="form__option">
-                <input class="form__radio" type="radio" name="version" id="need-advice">
-                <label for="need-advice">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
         <fieldset class="form__item">
-          <h2 class="form__title">
+          <legend class="visually-hidden">Информация о питомце</legend>
+          <p class="form__point">
+            <label for="name">Имя:<sup>*</sup></label>
+            <input class="form__field form__field--name" type="text" id="name" name="cat-name" placeholder="Барсик">
+          </p>
+          <p class="form__point">
+            <label for="weight">Вес (кг):<sup>*</sup></label>
+            <input class="form__field" type="number" id="weight" name="cat-weight" placeholder="7">
+          </p>
+          <p class="form__point">
+            <label class="form__label" for="age">Возраст (лет):</label>
+            <input class="form__field" type="number" id="age" name="cat-age" placeholder="7">
+          </p>
+        </fieldset>
+        <fieldset class="form__item">
+          <div class="visually-hidden">Цель программы</div>
+          <ul class="form__sublist">
+            <li class="form__option">
+              <input class="form__radio" type="radio" name="version" id="slim-program" checked>
+              <label for="slim-program">Похудение</label>
+            </li>
+            <li class="form__option">
+              <input class="form__radio" type="radio" name="version" id="pro-program">
+              <label for="pro-program">Набор массы</label>
+            </li>
+            <li class="form__option">
+              <input class="form__radio" type="radio" name="version" id="need-advice">
+              <label for="need-advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__item">
+          <legend class="form__title">
             Контактные данные (владельца кота)
-          </h2>
+          </legend>
           <p class="form__point">
             <label for="mail">E-mail:<sup>*</sup></label>
             <input class="form__field" type="email" id="mail" name="mail" placeholder="kuklachev@gmail.com">
@@ -124,7 +122,7 @@
           </ul>
         </fieldset>
         <button class="form__button" type="submit">Отправить заявку</button>
-        <div class="form__note"><sup>*</sup> — Обязательные поля</div>
+        <p class="form__note"><sup>*</sup> — Обязательные поля</p>
       </form>
       <section class="adress">
         <h2 class="visually-hidden">Адрес</h2>
@@ -138,7 +136,6 @@
       <section class="adress__map">
         <h2 class="visually-hidden">Карта</h2>
       </section>
-    </main>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
