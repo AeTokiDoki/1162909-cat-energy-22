@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Подбор программы Кэт энерджи</title>
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo logo">
         <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="34" height="38"/>
@@ -37,15 +37,15 @@
           <legend class="visually-hidden">Информация о питомце</legend>
           <p class="form__point">
             <label for="name">Имя:<sup>*</sup></label>
-            <input class="form__field form__field--name" type="text" id="name" name="cat-name" placeholder="Барсик">
+            <input class="form__field form__field--name" type="text" inputmode="text" id="name" name="cat-name" placeholder="Барсик">
           </p>
           <p class="form__point">
             <label for="weight">Вес (кг):<sup>*</sup></label>
-            <input class="form__field" type="number" id="weight" name="cat-weight" placeholder="7">
+            <input class="form__field" type="number" inputmode="decimal" id="weight" name="cat-weight" placeholder="7">
           </p>
           <p class="form__point">
             <label class="form__label" for="age">Возраст (лет):</label>
-            <input class="form__field" type="number" id="age" name="cat-age" placeholder="7">
+            <input class="form__field" type="number" inputmode="numeric" id="age" name="cat-age" placeholder="7">
           </p>
         </fieldset>
         <fieldset class="form__item">
@@ -71,14 +71,14 @@
           </legend>
           <p class="form__point">
             <label for="mail">E-mail:<sup>*</sup></label>
-            <input class="form__field" type="email" id="mail" name="mail" placeholder="kuklachev@gmail.com">
+            <input class="form__field" type="email" inputmode="email" id="mail" name="mail" placeholder="kuklachev@gmail.com">
             <svg class="form__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M19 0.719971V0.419983H1.00001V0.719971H1.00001V3.21997L10 10.22L19 3.21997V1.71998V0.719971ZM1 13.72V5.71997H2.3V12.42H18V5.71997H19.3V13.72L19 13.72H1.00001V13.72H1ZM17.7 2.58416L10 8.57305L2.30001 2.58416V2.01997H17.7V2.58416Z" fill="#222222"/>
             </svg>
           </p>
           <p class="form__point">
             <label for="tel">Телефон:<sup>*</sup></label>
-            <input class="form__field form__field--tel" type="tel" id="tel" placeholder="8 (960) 900-60-90">
+            <input class="form__field form__field--tel" type="tel" inputmode="tel" id="tel" placeholder="8 (960) 900-60-90">
             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <path d="M17.9 9.75275H9.39999V10.9569H17.9L15.8 13.0641L16.7 13.9672L19.8 10.8565C19.8974 10.7263 19.95 10.5678 19.95 10.405C19.95 10.2421 19.8974 10.0837 19.8 9.95344L16.7 6.84277L15.8 7.74587L17.9 9.75275Z" fill="black"/>
@@ -133,7 +133,7 @@
           </address>
         </div>
       </section>
-      <section class="adress__map">
+      <section class="adress-map">
         <h2 class="visually-hidden">Карта</h2>
       </section>
     </main>
