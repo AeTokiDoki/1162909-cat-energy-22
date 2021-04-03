@@ -1,10 +1,24 @@
 .main-head {
-  font-family: "Oswald";
-
   background-image: url("../img/bg-cat.jpg");
   background-repeat: no-repeat;
+}
 
-  .main-head__image {
-    padding-top: 50px;
-  }
+.main-head__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-head__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.main-head__image {
+  padding-top: 50px;
+}
+
+.main-head__button {
+  font-size: 14px;
+  line-height: 18px;
 }

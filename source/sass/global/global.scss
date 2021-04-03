@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+
+  background-color: rgb(90, 204, 134); //-Временный фон
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: $basic-white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
