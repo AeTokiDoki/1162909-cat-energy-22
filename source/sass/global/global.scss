@@ -9,7 +9,7 @@ a {
 }
 
 body {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
 
   background-color: rgb(90, 204, 134); //-Временный фон
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .text {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 18px;
 }
