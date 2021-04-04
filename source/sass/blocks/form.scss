@@ -1,0 +1,23 @@
+.form__item {
+  border: none;
+}
+
+.form__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__option {
+  color: $dark-grey2;
+}
+
+.form__button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+
+  background-color: $basic-green;
+  border: none;
+}

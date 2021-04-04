@@ -38,16 +38,16 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__item">
         <legend class="visually-hidden">Информация о питомце</legend>
-        <p class="form__point">
+        <p class="form__point choice">
           <label for="name">Имя:<sup>*</sup></label>
           <input class="form__field form__field--name" type="text" inputmode="text" id="name" name="cat-name"
             placeholder="Барсик">
         </p>
-        <p class="form__point">
+        <p class="form__point choice">
           <label for="weight">Вес (кг):<sup>*</sup></label>
           <input class="form__field" type="number" inputmode="decimal" id="weight" name="cat-weight" placeholder="7">
         </p>
-        <p class="form__point">
+        <p class="form__point choice">
           <label class="form__label" for="age">Возраст (лет):</label>
           <input class="form__field" type="number" inputmode="decimal" id="age" name="cat-age" placeholder="7">
         </p>
@@ -55,15 +55,15 @@
       <fieldset class="form__item">
         <legend class="visually-hidden">Цель программы</legend>
         <ul class="form__sublist list">
-          <li class="form__option">
+          <li class="form__option choice">
             <input class="form__radio" type="radio" name="version" id="slim-program" checked>
             <label for="slim-program">Похудение</label>
           </li>
-          <li class="form__option">
+          <li class="form__option choice">
             <input class="form__radio" type="radio" name="version" id="pro-program">
             <label for="pro-program">Набор массы</label>
           </li>
-          <li class="form__option">
+          <li class="form__option choice">
             <input class="form__radio" type="radio" name="version" id="need-advice">
             <label for="need-advice">Не знаю (Нужен ваш совет)</label>
           </li>
@@ -73,7 +73,7 @@
         <legend class="form__title">
           Контактные данные (владельца кота)
         </legend>
-        <p class="form__point">
+        <p class="form__point choice">
           <label for="mail">E-mail:<sup>*</sup></label>
           <input class="form__field" type="email" inputmode="email" id="mail" name="mail"
             placeholder="kuklachev@gmail.com">
@@ -84,7 +84,7 @@
               fill="#222222" />
           </svg>
         </p>
-        <p class="form__point">
+        <p class="form__point choice">
           <label for="tel">Телефон:<sup>*</sup></label>
           <input class="form__field form__field--tel" type="tel" inputmode="tel" id="tel"
             placeholder="8 (960) 900-60-90">
@@ -109,7 +109,7 @@
         <legend class="form__title">
           Комментарий
         </legend>
-        <textarea class="form__textarea" id="comment" name="comment"
+        <textarea class="form__textarea choice" id="comment" name="comment"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__item">
@@ -117,19 +117,19 @@
           Дополнительно
         </legend>
         <ul class="form__sublist list">
-          <li class="form__option">
+          <li class="form__option choice">
             <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
             <label for="sweetener">Сахарозаменитель</label>
           </li>
-          <li class="form__option">
+          <li class="form__option choice">
             <input class="form__checkbox" type="checkbox" name="water" id="water">
             <label for="water">Питьевая вода</label>
           </li>
-          <li class="form__option">
+          <li class="form__option choice">
             <input class="form__checkbox" type="checkbox" name="milk" id="milk">
             <label for="milk">Молоко</label>
           </li>
-          <li class="form__option">
+          <li class="form__option choice">
             <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
             <label for="vitamins">Витамины</label>
           </li>
