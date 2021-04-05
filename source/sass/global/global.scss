@@ -9,9 +9,10 @@ a {
 }
 
 body {
-  font-family: $oswald;
+  max-width: 320px;
+  min-width: 320px;
 
-  background-color: rgb(90, 204, 134); //-Временный фон
+  font-family: $oswald;
 }
 
 .visually-hidden {
@@ -46,9 +47,29 @@ body {
   line-height: 18px;
 }
 
-.choice {
+.option {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $dark-grey;
+}
+
+.button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-link {
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  background-color: $basic-green;
 }
