@@ -63,13 +63,20 @@ body {
 
 .btn-link {
   display: block;
-  margin: 0 auto;
   padding-top: 10px;
-  width: 280px;
-  height: 40px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  min-height: 40px;
   text-align: center;
 
   text-transform: uppercase;
 
   background-color: $basic-green;
+}
+
+.page-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
 }
