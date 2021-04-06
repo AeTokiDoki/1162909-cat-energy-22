@@ -1,0 +1,25 @@
+.products__name {
+  color: $dark-grey2;
+  text-transform: uppercase;
+}
+
+.products__info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+}
+
+.products__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $dark-black;
+}
+
+.products__link--all {
+  color: $dark-grey;
+
+  background-color: $light-white;
+}
