@@ -1,5 +1,21 @@
 .main-footer {
-  background-color: $basic-grey;
+  background-color: $light-white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.main-footer__list {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .copyright__link {

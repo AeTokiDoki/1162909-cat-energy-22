@@ -1,6 +1,12 @@
 .main-head {
+  color: $basic-white;
+
   background-image: url("../img/bg-cat.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+  }
 }
 
 .main-head__title {
@@ -21,4 +27,15 @@
 .main-head__button {
   font-size: 14px;
   line-height: 18px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    height: 54px;
+
+    padding-top: 15px;
+  }
 }

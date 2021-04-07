@@ -1,3 +1,29 @@
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  min-height: 198px;
+
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.main-nav__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  text-align: center;
+  border-bottom: 1px solid $border-light;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .main-nav__link {
   color: $basic-black;
   font-weight: 500;

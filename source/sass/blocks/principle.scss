@@ -1,0 +1,20 @@
+.principle__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.principle__item {
+  padding-right: 20px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  max-width: 280px;
+  height: 60px;
+}

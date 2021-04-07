@@ -1,5 +1,18 @@
 .adress {
-  background-color: $basic-grey;
+  background-color: $basic-white;
+}
+
+.adress__wrapper {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+    max-height: 201px;
+  }
 }
 
 .adress__text {
