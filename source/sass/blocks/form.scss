@@ -1,3 +1,12 @@
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 110px;
+    margin-left: 110px;
+  }
+}
+
 .form__group {
   border: none;
 }
@@ -6,17 +15,86 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__option {
+  display: flex;
+
   color: $dark-grey2;
+
+  @media (min-width: $tablet-width) {
+    width: 275px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .form__button {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  width: 280px;
+  margin-right: 20px;
+  margin-left: 20px;
+
   color: $basic-white;
 
-  background-color: $basic-green;
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 52px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
+}
+
+.form__note {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.form__group--bord {
+  border-top: 1px solid $border-light;
+  border-bottom: 1px solid $border-light;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-light;
+  }
+}
+
+.form__group--contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 110px;
+    margin-left: 110px;
+  }
+}
+
+.form__sublist {
+  padding: 0 20px;
+}
+
+.form__sublist--about {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

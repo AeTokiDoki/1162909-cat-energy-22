@@ -1,5 +1,17 @@
+.main-form__title {
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .main-form__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
