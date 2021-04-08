@@ -9,9 +9,6 @@ a {
 }
 
 body {
-  max-width: 320px;
-  min-width: 320px;
-
   font-family: $oswald;
 }
 
@@ -24,6 +21,8 @@ body {
 }
 
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
