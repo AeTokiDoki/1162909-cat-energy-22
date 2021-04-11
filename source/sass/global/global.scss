@@ -51,6 +51,11 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .button {
@@ -78,4 +83,20 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+}
+
+.container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 calc(50% - 354px);
+
+    &--form {
+      padding: 0 calc(50% - 315px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 calc(50% - 610px);
+  }
 }

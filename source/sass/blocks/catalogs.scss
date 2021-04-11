@@ -1,6 +1,7 @@
 .catalogs__list {
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -17,8 +18,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 570px;
     max-width: 570px;
     min-height: 374px;
+    margin: 0;
   }
 }
 
