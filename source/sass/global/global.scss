@@ -90,6 +90,10 @@ body {
 
   @media (min-width: $tablet-width) {
     padding: 0 calc(50% - 354px);
+
+    &--form {
+      padding: 0 calc(50% - 315px);
+    }
   }
 
   @media (min-width: $desktop-width) {
