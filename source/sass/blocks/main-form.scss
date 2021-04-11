@@ -1,18 +1,11 @@
-.main-form {
-  width: $mobile-width;
-  margin: 0 auto;
-  padding: 0 20px;
-
+.container--form {
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    padding-left: 70px;
-    padding-right: 66px;
+    padding: 0 calc(50% - 315px);
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 calc(50% - 610px);
     width: $desktop-width;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 }
 

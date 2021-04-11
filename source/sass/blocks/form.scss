@@ -29,8 +29,6 @@
 
   @media (min-width: $tablet-width) {
     width: 275px;
-    margin-left: 20px;
-    margin-bottom: 30px;
   }
 }
 
@@ -68,11 +66,11 @@
 }
 
 .form__group--bord {
-  border-top: 1px solid $border-light;
-  border-bottom: 1px solid $border-light;
+  border-top: $border-grey;
+  border-bottom: $border-grey;
 
   @media (min-width: $tablet-width) {
-    border: 1px solid $border-light;
+    border: $border-grey;
   }
 }
 

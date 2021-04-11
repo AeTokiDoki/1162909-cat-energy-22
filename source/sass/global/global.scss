@@ -84,3 +84,19 @@ body {
   font-size: 36px;
   line-height: 36px;
 }
+
+.container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 calc(50% - 354px);
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 calc(50% - 610px);
+    width: $desktop-width;
+  }
+}
