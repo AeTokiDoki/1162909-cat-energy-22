@@ -15,16 +15,20 @@
   @media (min-width: $tablet-width) {
     height: 140px;
     padding: 0 38px;
-    border: 1px solid $basic-grey;
+    border: $border-grey;
+    border-bottom: none;
 
-    @media (min-width: $desktop-width) {
-      display: flex;
-
-      border-left: none;
-      border-right: none;
-      padding: 0;
-      height: 72px;
+    &--vitamin {
+      border-bottom: $border-grey;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    border-left: none;
+    border-right: none;
+    padding: 0;
+    height: 72px;
   }
 }
 
@@ -81,6 +85,10 @@
 }
 
 .add-products__link {
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 40px;
