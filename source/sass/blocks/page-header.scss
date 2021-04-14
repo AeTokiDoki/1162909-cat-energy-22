@@ -1,17 +1,13 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  width: $mobile-width;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
     flex-direction: row;
     height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
     justify-content: space-between;
     height: 180px;
   }
