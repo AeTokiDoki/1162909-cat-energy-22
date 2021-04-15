@@ -65,7 +65,37 @@
   @media (min-width: $tablet-width) {
     min-width: 708px;
     max-width: 708px;
-    min-height: 372px;
+
+    margin-bottom: 30px;
+
+    &::after {
+      left: 450px;
+      top: 85px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim {
+      &::before {
+        top: 70px;
+        left: 477px;
+
+        width: 140px;
+        height: 192px;
+        background-size: 140px 194px;
+      }
+    }
+    &--pro {
+      &::before {
+        top: 128px;
+        left: 414px;
+
+        width: 268px;
+        height: 112px;
+        background-size: 268px 112px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -73,6 +103,36 @@
     max-width: 570px;
     min-height: 374px;
     margin: 0;
+
+    &::after {
+      left: 53px;
+      top: 47px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim {
+      &::before {
+        top: 42px;
+        left: 66px;
+
+        width: 70px;
+        height: 97px;
+        background-size: 70px 97px;
+      }
+    }
+
+    &--pro {
+      &::before {
+        top: 68px;
+        left: 32px;
+
+        width: 134px;
+        height: 56px;
+        background-size: 134px 56px;
+      }
+    }
   }
 }
 
@@ -94,8 +154,21 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 400px;
+
+    padding-top: 77px;
+    padding-left: 53px;
+
+    text-align: start;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding-left: 214px;
+    padding-right: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -112,6 +185,26 @@
   line-height: 18px;
 
   border-bottom: $border-basic;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 32px;
+    padding-right: 5px;
+
+    max-width: 420px;
+
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+
+    &--pro {
+      max-width: 342px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 500px;
+    padding-bottom: 6px;
+  }
 }
 
 .catalogs__link {
@@ -123,6 +216,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  text-transform: uppercase;
   line-height: 16px;
   color: $basic-black;
 
@@ -147,5 +241,18 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 52px;
+    padding-bottom: 52px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: 30px;
+      left: 170px;
+    }
   }
 }
