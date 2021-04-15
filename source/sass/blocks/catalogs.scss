@@ -1,3 +1,7 @@
+.catalogs {
+  margin-top: 22px;
+}
+
 .catalogs__list {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -6,10 +10,57 @@
 }
 
 .catalogs__item {
+  position: relative;
+
   max-width: 280px;
   margin: 0 auto;
+  margin-bottom: 20px;
 
-  background-color: $basic-grey;
+  background-color: $light-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    top: 22px;
+    left: 20px;
+    border-radius: 50%;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    background-repeat: no-repeat;
+
+    z-index: 4;
+  }
+
+  &--slim {
+    &::before {
+      top: 19px;
+      left: 28px;
+
+      width: 36px;
+      height: 50px;
+      background-image: url("../img/black-cat-slim.svg");
+    }
+  }
+
+  &--pro {
+    &::before {
+      top: 33px;
+      left: 9px;
+
+      width: 67px;
+      height: 28px;
+      background-image: url("../img/black-cat-pro.svg");
+    }
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
@@ -26,14 +77,21 @@
 }
 
 .catalogs__title {
-  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px;
   padding-right: 20px;
+  margin: 0;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-align: center;
   text-transform: uppercase;
+
+  &--right {
+    padding-right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -42,17 +100,52 @@
 }
 
 .catalogs__text {
-  padding-left: 20px;
-  padding-right: 33px;
-  min-height: 140px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 22px;
+  padding-right: 13px;
 
-  text-align: left;
   font-family: $arial;
   font-size: 14px;
   line-height: 18px;
+
+  border-bottom: $border-basic;
 }
 
 .catalogs__link {
+  position: relative;
+
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   line-height: 16px;
   color: $basic-black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    top: 24px;
+    left: 110px;
+    background-image: url("../img/little-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      width: 33px;
+      background-image: url("../img/big-arrow.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
