@@ -80,12 +80,14 @@ body {
 }
 
 .page-title {
+  text-align: center;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }
 
 .container {
+  margin: 0 auto;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {

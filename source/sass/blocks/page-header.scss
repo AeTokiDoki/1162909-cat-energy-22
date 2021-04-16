@@ -18,9 +18,10 @@
   min-width: 210px;
   margin-top: 16px;
 
-  border-bottom: 1px solid $border-light;
+  border-bottom: $border-grey;
 
   @media (min-width: $tablet-width) {
+    width: 174px;
     border: none;
   }
 }
