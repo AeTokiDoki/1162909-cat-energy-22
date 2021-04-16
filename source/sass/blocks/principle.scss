@@ -1,20 +1,110 @@
+.principle {
+  @media (min-width: $tablet-width) {
+    border-bottom: $border-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
+}
+
+.principle__title {
+  margin: 0;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .principle__list {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .principle__item {
-  padding-right: 20px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  position: relative;
 
-  max-width: 280px;
-  height: 60px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-top: 5px;
+  padding-bottom: 26px;
+  max-width: 198px;
+  margin-left: auto;
+  margin-right: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -88px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $basic-green;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -72px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/icon-leaf.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--tub {
+    &::after {
+      background-image: url("../img/icon-tub.svg");
+    }
+  }
+
+  &--eat {
+    &::after {
+      background-image: url("../img/icon-eat.svg");
+    }
+  }
+
+  &--alarm {
+    &::after {
+      background-image: url("../img/icon-alarm.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 150px;
+    margin: 0;
+    margin-bottom: 70px;
+    padding-right: 25px;
+
+    max-width: 250px;
+    min-height: 250px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      top: 25px;
+      left: 25px;
+    }
+  }
 }
