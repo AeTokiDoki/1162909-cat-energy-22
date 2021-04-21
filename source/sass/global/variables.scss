@@ -1,6 +1,6 @@
-// Colors
+// colors
 
-$basic-grey: #d9d9d9;
+$basic-grey: #eaeaea;
 $basic-white: #ffffff;
 $light-white: #f2f2f2;
 $border-light: #e6e6e6;
@@ -9,16 +9,20 @@ $dark-black: #111111;
 $dark-grey: #444444;
 $dark-grey2: #222222;
 $basic-green: #68b738;
+$bg-count: #c4c4c4;
+$border-footer: #d9d9d9;
 
+$border-social: 1px solid #d9d9d9;
 $border-grey: 1px solid $border-light;
 $border-basic: 1px solid $basic-grey;
+$border-count: 1px solid #cdcdcd;
 
 // fonts
 
 $oswald: "Oswald", "Arial", sans-serif;
 $arial: "Arial", sans-serif;
 
-// Viewports
+// viewport
 
 $mobile-width: 320px;
 $tablet-width: 768px;

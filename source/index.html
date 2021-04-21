@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -60,16 +61,16 @@
     <section class="principle container">
       <h2 class="principle__title title">Как это работает</h2>
       <ol class="principle__list list">
-        <li class="principle__item text">Функциональное питание
+        <li class="principle__item principle__item--leaf text number">Функциональное питание
           содержит только полезные
           питательные вещества.</li>
-        <li class="principle__item principle__item--tub text">Выпускается в виде порошка,
+        <li class="principle__item principle__item--tub text number">Выпускается в виде порошка,
           который нужно лишь залить
           кипятком и готово.</li>
-        <li class="principle__item principle__item--eat text">Замените один-два приема
+        <li class="principle__item principle__item--eat text number">Замените один-два приема
           обычной еды на наше
           функциональное питание.</li>
-        <li class="principle__item principle__item--alarm text">Уже через месяц наслаждайтесь
+        <li class="principle__item principle__item--alarm text number">Уже через месяц наслаждайтесь
           изменениями к лучшему вашего питомца!</li>
       </ol>
     </section>
@@ -87,7 +88,7 @@
           </dl>
           <dl class="result__item">
             <dt class="result__count">60 дней</dt>
-            <dd class="result__text">затрачено времени</dd>
+            <dd class="result__text result__text--time">затрачено времени</dd>
           </dl>
           <div class="result__price">
             <p class="result__title">Затраты на питание:</p>
@@ -119,10 +120,10 @@
         </div>
       </div>
     </section>
-    <section class="adress">
+    <section class="adress container">
       <h2 class="visually-hidden">Адрес</h2>
       <div class="adress__wrapper">
-        <p class="adress__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="adress__text">Приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="adress__info-wrapper">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </address>
@@ -130,6 +131,9 @@
     </section>
     <section class="adress-map">
       <h2 class="visually-hidden">Карта</h2>
+      <iframe class="adress-map__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618947335410!5m2!1sru!2sru"
+        width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
     </section>
   </main>
   <footer class="main-footer">
@@ -166,9 +170,11 @@
         </a>
       </li>
     </ul>
-    <div class="main-footer__copyright copyright">
-      <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive"
+    <div class="main-footer__copyright copyright container">
+      <a class="copyright__link copyright__link--text link" href="https://htmlacademy.ru/intensive/adaptive"
         aria-label="Ссылка на Онлайн‑курс HTML и CSS. Адаптивная вёрстка и автоматизация">HTML Academy
+      </a>
+      <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="main-footer__logo" width="27" height="34" viewBox="0 0 27 34" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path

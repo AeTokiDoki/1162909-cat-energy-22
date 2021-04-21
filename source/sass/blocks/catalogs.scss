@@ -34,6 +34,8 @@
   &::before {
     content: "";
     position: absolute;
+    width: 67px;
+    height: 50px;
 
     background-repeat: no-repeat;
 
@@ -45,8 +47,6 @@
       top: 19px;
       left: 28px;
 
-      width: 36px;
-      height: 50px;
       background-image: url("../img/black-cat-slim.svg");
     }
   }
@@ -56,8 +56,6 @@
       top: 33px;
       left: 9px;
 
-      width: 67px;
-      height: 28px;
       background-image: url("../img/black-cat-pro.svg");
     }
   }

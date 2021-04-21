@@ -38,47 +38,41 @@
   padding-bottom: 26px;
   max-width: 198px;
   margin-left: auto;
-  margin-right: 20px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -88px;
+    right: 225px;
 
     width: 60px;
     height: 60px;
 
     background-color: $basic-green;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: -72px;
-
-    width: 30px;
-    height: 30px;
-
-    background-image: url("../img/icon-leaf.svg");
+    background-position: 50% 50%;
     background-repeat: no-repeat;
   }
 
+  &--leaf {
+    &::before {
+      background-image: url("../img/icon-leaf.svg");
+    }
+  }
+
   &--tub {
-    &::after {
+    &::before {
       background-image: url("../img/icon-tub.svg");
     }
   }
 
   &--eat {
-    &::after {
+    &::before {
       background-image: url("../img/icon-eat.svg");
     }
   }
 
   &--alarm {
-    &::after {
+    &::before {
       background-image: url("../img/icon-alarm.svg");
     }
   }
@@ -87,7 +81,7 @@
     padding-top: 150px;
     margin: 0;
     margin-bottom: 70px;
-    padding-right: 25px;
+    padding-right: 3px;
 
     max-width: 250px;
     min-height: 250px;
@@ -103,8 +97,35 @@
     }
 
     &::after {
-      top: 25px;
-      left: 25px;
+      position: absolute;
+      content: "1";
+      right: 0;
+      top: 0;
+
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 200px;
+      color: $light-white;
+
+      z-index: -4;
+    }
+
+    &--tub {
+      &::after {
+        content: "2";
+      }
+    }
+
+    &--eat {
+      &::after {
+        content: "3";
+      }
+    }
+
+    &--alarm {
+      &::after {
+        content: "4";
+      }
     }
   }
 }
