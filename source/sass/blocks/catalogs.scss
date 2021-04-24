@@ -1,3 +1,7 @@
+.catalogs {
+  margin-top: 22px;
+}
+
 .catalogs__list {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -6,15 +10,91 @@
 }
 
 .catalogs__item {
+  position: relative;
+
   max-width: 280px;
   margin: 0 auto;
+  margin-bottom: 20px;
 
-  background-color: $basic-grey;
+  background-color: $light-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    top: 22px;
+    left: 20px;
+    border-radius: 50%;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 50px;
+
+    background-repeat: no-repeat;
+
+    z-index: 4;
+  }
+
+  &--slim {
+    &::before {
+      top: 19px;
+      left: 28px;
+
+      background-image: url("../img/black-cat-slim.svg");
+    }
+  }
+
+  &--pro {
+    &::before {
+      top: 33px;
+      left: 9px;
+
+      background-image: url("../img/black-cat-pro.svg");
+    }
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
     max-width: 708px;
-    min-height: 372px;
+
+    margin-bottom: 30px;
+
+    &::after {
+      left: 450px;
+      top: 85px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim {
+      &::before {
+        top: 70px;
+        left: 477px;
+
+        width: 140px;
+        height: 192px;
+        background-size: 140px 194px;
+      }
+    }
+
+    &--pro {
+      &::before {
+        top: 128px;
+        left: 414px;
+
+        width: 268px;
+        height: 112px;
+        background-size: 268px 112px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -22,12 +102,45 @@
     max-width: 570px;
     min-height: 374px;
     margin: 0;
+
+    &::after {
+      left: 53px;
+      top: 47px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim {
+      &::before {
+        top: 42px;
+        left: 66px;
+
+        width: 70px;
+        height: 97px;
+        background-size: 70px 97px;
+      }
+    }
+
+    &--pro {
+      &::before {
+        top: 68px;
+        left: 32px;
+
+        width: 134px;
+        height: 56px;
+        background-size: 134px 56px;
+      }
+    }
   }
 }
 
 .catalogs__title {
-  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px;
   padding-right: 20px;
+  margin: 0;
 
   font-weight: 400;
   font-size: 24px;
@@ -35,24 +148,110 @@
   text-align: center;
   text-transform: uppercase;
 
+  &--right {
+    padding-right: 0;
+  }
+
   @media (min-width: $tablet-width) {
+    max-width: 400px;
+
+    padding-top: 77px;
+    padding-left: 53px;
+
+    text-align: start;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding-left: 214px;
+    padding-right: 60px;
+    padding-bottom: 60px;
   }
 }
 
 .catalogs__text {
-  padding-left: 20px;
-  padding-right: 33px;
-  min-height: 140px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 22px;
+  padding-right: 13px;
 
-  text-align: left;
   font-family: $arial;
   font-size: 14px;
   line-height: 18px;
+
+  border-bottom: $border-basic;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 32px;
+    padding-right: 5px;
+
+    max-width: 420px;
+
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+
+    &--pro {
+      max-width: 342px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 500px;
+    padding-bottom: 6px;
+  }
 }
 
 .catalogs__link {
+  position: relative;
+
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  text-transform: uppercase;
   line-height: 16px;
   color: $basic-black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    top: 24px;
+    left: 110px;
+    background-image: url("../img/little-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      width: 33px;
+      background-image: url("../img/big-arrow.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 52px;
+    padding-bottom: 52px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: 30px;
+      left: 170px;
+    }
+  }
 }

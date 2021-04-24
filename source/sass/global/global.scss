@@ -87,8 +87,8 @@ body {
 }
 
 .container {
-  margin: 0 auto;
   padding: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 0 calc(50% - 354px);
