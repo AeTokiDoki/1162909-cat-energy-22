@@ -40,6 +40,12 @@ body {
   line-height: 40px;
 }
 
+.img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 .text {
   font-family: $arial;
   font-size: 14px;
@@ -87,8 +93,7 @@ body {
 }
 
 .container {
-  padding: 0 20px;
-  margin: 0 auto;
+  padding: 0 calc(50% - 140px);
 
   @media (min-width: $tablet-width) {
     padding: 0 calc(50% - 354px);

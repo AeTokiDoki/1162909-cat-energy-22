@@ -12,49 +12,53 @@
 .catalogs__item {
   position: relative;
 
-  max-width: 280px;
-  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
 
   background-color: $light-white;
 
+  &::before,
+  &::after {
+    background-repeat: no-repeat;
+  }
+
   &::after {
     content: "";
     position: absolute;
+    top: 22px;
+    left: 20px;
 
     width: 50px;
     height: 50px;
-    top: 22px;
-    left: 20px;
+
     border-radius: 50%;
     background-color: $basic-green;
-    background-repeat: no-repeat;
   }
 
   &::before {
     content: "";
     position: absolute;
+    top: 19px;
+    left: 10px;
+
     width: 67px;
     height: 50px;
 
-    background-repeat: no-repeat;
+    background-position: center;
 
     z-index: 4;
   }
 
   &--slim {
     &::before {
-      top: 19px;
-      left: 28px;
-
       background-image: url("../img/black-cat-slim.svg");
     }
   }
 
   &--pro {
     &::before {
-      top: 33px;
-      left: 9px;
+      top: 25px;
 
       background-image: url("../img/black-cat-pro.svg");
     }
@@ -65,6 +69,7 @@
     max-width: 708px;
 
     margin-bottom: 30px;
+    padding: 77px 279px 52px 57px;
 
     &::after {
       left: 450px;
@@ -74,24 +79,25 @@
       height: 200px;
     }
 
+    &::before {
+      top: 70px;
+      right: 27px;
+      left: auto;
+
+      width: 270px;
+      height: 210px;
+    }
+
     &--slim {
       &::before {
-        top: 70px;
-        left: 477px;
-
-        width: 140px;
-        height: 192px;
         background-size: 140px 194px;
       }
     }
 
     &--pro {
       &::before {
-        top: 128px;
-        left: 414px;
+        top: 100px;
 
-        width: 268px;
-        height: 112px;
         background-size: 268px 112px;
       }
     }
@@ -136,9 +142,7 @@
 }
 
 .catalogs__title {
-  padding-top: 30px;
   padding-bottom: 15px;
-  padding-left: 30px;
   padding-right: 20px;
   margin: 0;
 
@@ -155,9 +159,6 @@
   @media (min-width: $tablet-width) {
     max-width: 400px;
 
-    padding-top: 77px;
-    padding-left: 53px;
-
     text-align: start;
     font-size: 36px;
     line-height: 36px;
@@ -173,11 +174,8 @@
 
 .catalogs__text {
   margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 15px;
   padding-bottom: 22px;
-  padding-right: 13px;
 
   font-family: $arial;
   font-size: 14px;
@@ -186,10 +184,8 @@
   border-bottom: $border-basic;
 
   @media (min-width: $tablet-width) {
-    padding-left: 32px;
-    padding-right: 5px;
-
     max-width: 420px;
+    padding-bottom: 52px;
 
     font-size: 16px;
     line-height: 24px;
@@ -209,32 +205,40 @@
 .catalogs__link {
   position: relative;
 
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 100px;
 
   text-transform: uppercase;
   line-height: 16px;
   color: $basic-black;
 
   &::after {
+    content: url("../img/big-arrow.svg");
+    position: absolute;
+
+    right: 43px;
+
+    transition: transform 300ms;
+  }
+
+  &::before {
     content: "";
     position: absolute;
-    width: 24px;
-    height: 11px;
-    top: 24px;
-    left: 110px;
-    background-image: url("../img/little-arrow.svg");
-    background-repeat: no-repeat;
+    right: 67px;
+
+    width: 8px;
+    height: 100%;
+
+    background-color: $light-white;
+    z-index: 10;
   }
 
   &:hover,
   &:focus {
     &::after {
-      width: 33px;
-      background-image: url("../img/big-arrow.svg");
+      transform: translateX(8px);
     }
   }
 
@@ -243,15 +247,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 52px;
-    padding-bottom: 52px;
-
     font-size: 20px;
     line-height: 30px;
-
-    &::after {
-      top: 30px;
-      left: 170px;
-    }
   }
 }

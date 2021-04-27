@@ -4,8 +4,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-right: 30px;
-    padding-left: 30px;
   }
 }
 
@@ -18,16 +16,24 @@
 
 .main-footer__list {
   display: flex;
-  justify-content: space-between;
-  max-width: 280px;
-  margin: 0 auto;
-  padding-right: 66px;
-  padding-left: 66px;
+  justify-content: center;
+  flex-wrap: wrap;
+
   padding-top: 20px;
   padding-bottom: 20px;
 
   border-top: $border-social;
   border-bottom: $border-social;
+}
+
+.main-footer__item {
+  min-width: 30px;
+  display: flex;
+  margin: 5px 10px;
+}
+
+.main-footer__link {
+  margin: auto;
 }
 
 .main-footer__copyright {

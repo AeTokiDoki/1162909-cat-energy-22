@@ -1,8 +1,8 @@
-.adress {
+.address {
   background-color: $basic-white;
 }
 
-.adress__wrapper {
+.address__wrapper {
   display: flex;
 
   @media (min-width: $tablet-width) {
@@ -15,7 +15,7 @@
   }
 }
 
-.adress__text {
+.address__text {
   min-width: 140px;
   padding-right: 8px;
   padding-top: 16px;
@@ -26,7 +26,7 @@
   line-height: 18px;
 }
 
-.adress__info-wrapper {
+.address__info-wrapper {
   padding-top: 28px;
   padding-bottom: 26px;
 
