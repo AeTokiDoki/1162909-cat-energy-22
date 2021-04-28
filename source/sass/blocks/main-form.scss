@@ -1,4 +1,7 @@
 .main-form__title {
+  margin-bottom: 37px;
+  padding-right: 20px;
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
@@ -6,9 +9,13 @@
 }
 
 .main-form__text {
+  margin-bottom: 38px;
+  padding-right: 5px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

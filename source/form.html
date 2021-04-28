@@ -41,12 +41,12 @@
         <fieldset class="form__group">
           <legend class="visually-hidden">Информация о питомце</legend>
           <p class="form__point option">
-            <label for="name">Имя:<sup>*</sup></label>
+            <label class="form__label" for="name">Имя:<sup>*</sup></label>
             <input class="form__field form__field--name" type="text" inputmode="text" id="name" name="cat-name"
               placeholder="Барсик">
           </p>
           <p class="form__point option">
-            <label for="weight">Вес (кг):<sup>*</sup></label>
+            <label class="form__label" for="weight">Вес (кг):<sup>*</sup></label>
             <input class="form__field" type="number" inputmode="decimal" id="weight" name="cat-weight" placeholder="7">
           </p>
           <p class="form__point option">
@@ -58,16 +58,16 @@
           <legend class="visually-hidden">Цель программы</legend>
           <ul class="form__sublist list">
             <li class="form__option option">
-              <input class="form__radio" type="radio" name="version" id="slim-program" checked>
-              <label for="slim-program">Похудение</label>
+              <input class="form__radio input " type="radio" name="version" id="slim-program" checked>
+              <label class="form__radio-checkbox" for="slim-program">Похудение</label>
             </li>
             <li class="form__option option">
-              <input class="form__radio" type="radio" name="version" id="pro-program">
-              <label for="pro-program">Набор массы</label>
+              <input class="form__radio input" type="radio" name="version" id="pro-program">
+              <label class="form__radio-checkbox" for="pro-program">Набор массы</label>
             </li>
             <li class="form__option option">
-              <input class="form__radio" type="radio" name="version" id="need-advice">
-              <label for="need-advice">Не знаю (Нужен ваш совет)</label>
+              <input class="form__radio input " type="radio" name="version" id="need-advice">
+              <label class="form__radio-checkbox" for="need-advice">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
@@ -76,8 +76,8 @@
         <legend class="form__title">
           Контактные данные (владельца кота)
         </legend>
-        <p class="form__point option">
-          <label for="mail">E-mail:<sup>*</sup></label>
+        <p class="form__point form__point--desktop option right">
+          <label class="form__label" for="mail">E-mail:<sup>*</sup></label>
           <input class="form__field" type="email" inputmode="email" id="mail" name="mail"
             placeholder="kuklachev@gmail.com">
           <svg class="form__icon" width="20" height="14" viewBox="0 0 20 14" fill="none"
@@ -87,11 +87,11 @@
               fill="#222222" />
           </svg>
         </p>
-        <p class="form__point option">
-          <label for="tel">Телефон:<sup>*</sup></label>
+        <p class="form__point form__point--desktop option">
+          <label class="form__label" for="tel">Телефон:<sup>*</sup></label>
           <input class="form__field form__field--tel" type="tel" inputmode="tel" id="tel"
             placeholder="8 (960) 900-60-90">
-          <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="form__icon" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
               <path
                 d="M17.9 9.75275H9.39999V10.9569H17.9L15.8 13.0641L16.7 13.9672L19.8 10.8565C19.8974 10.7263 19.95 10.5678 19.95 10.405C19.95 10.2421 19.8974 10.0837 19.8 9.95344L16.7 6.84277L15.8 7.74587L17.9 9.75275Z"
@@ -121,20 +121,20 @@
         </legend>
         <ul class="form__sublist form__sublist--about list">
           <li class="form__option option">
-            <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-            <label for="sweetener">Сахарозаменитель</label>
+            <input class="form__checkbox input " type="checkbox" name="sweetener" id="sweetener" checked>
+            <label class="form__type-checkbox" for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="form__option option">
-            <input class="form__checkbox" type="checkbox" name="water" id="water">
-            <label for="water">Питьевая вода</label>
+            <input class="form__checkbox input " type="checkbox" name="water" id="water">
+            <label class="form__type-checkbox" for="water">Питьевая вода</label>
           </li>
           <li class="form__option option">
-            <input class="form__checkbox" type="checkbox" name="milk" id="milk">
-            <label for="milk">Молоко</label>
+            <input class="form__checkbox input " type="checkbox" name="milk" id="milk">
+            <label class="form__type-checkbox" for="milk">Молоко</label>
           </li>
           <li class="form__option option">
-            <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
-            <label for="vitamins">Витамины</label>
+            <input class="form__checkbox input " type="checkbox" name="vitamins" id="vitamins">
+            <label class="form__type-checkbox" for="vitamins">Витамины</label>
           </li>
         </ul>
       </fieldset>
@@ -143,7 +143,7 @@
         <p class="form__note"><sup>*</sup> — Обязательные поля</p>
       </div>
     </form>
-    <section class="address">
+    <section class="address container">
       <h2 class="visually-hidden">Адрес</h2>
       <div class="address__wrapper">
         <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
