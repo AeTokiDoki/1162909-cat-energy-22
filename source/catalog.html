@@ -31,14 +31,14 @@
       </ul>
     </nav>
   </header>
-  <main class="catalog-main container">
-    <h1 class="catalog-main__title page-title">Каталог продукции</h1>
-    <section class="products">
+  <main class="catalog-main">
+    <h1 class="catalog-main__title page-title container">Каталог продукции</h1>
+    <section class="products container">
       <h2 class="visually-hidden">Список продуктов</h2>
       <ul class="products__list list">
         <li class="products__item">
           <a class="products__photo link" href="product.html">
-            <img class="img" src="img/catalog-1.png" width="140" height="112" alt="Cat Energy PRO 500 г курица" />
+            <img class="img" src="img/catalog-1.png" width="68" height="86" alt="Cat Energy PRO 500 г курица" />
           </a>
           <a class="products__name link" href="product.html">Cat Energy PRO 500 г</a>
           <dl class="products__info">
@@ -53,7 +53,7 @@
         </li>
         <li class="products__item">
           <a class="products__photo link" href="product.html">
-            <img class="img" src="img/catalog-2.png" width="140" height="112" alt="Cat Energy PRO 1000 г курица" />
+            <img class="img" src="img/catalog-2.png" width="84" height="100" alt="Cat Energy PRO 1000 г курица" />
           </a>
           <a class="products__name link" href="product.html">Cat Energy PRO 1000 г</a>
           <dl class="products__info">
@@ -68,7 +68,7 @@
         </li>
         <li class="products__item">
           <a class="products__photo link" href="product.html">
-            <img class="img" src="img/catalog-3.png" width="140" height="112" alt="Cat Energy PRO 500 г рыба" />
+            <img class="img" src="img/catalog-3.png" width="68" height="78" alt="Cat Energy PRO 500 г рыба" />
           </a>
           <a class="products__name link" href="product.html">Cat Energy PRO 500 г</a>
           <dl class="products__info">
@@ -83,7 +83,7 @@
         </li>
         <li class="products__item">
           <a class="products__photo link" href="product.html">
-            <img class="img" src="img/catalog-4.png" width="140" height="112" alt="Cat Energy PRO 1000 г рыба" />
+            <img class="img" src="img/catalog-4.png" width="84" height="100" alt="Cat Energy PRO 1000 г рыба" />
           </a>
           <a class="products__name link" href="product.html">Cat Energy PRO 1000 г</a>
           <dl class="products__info">
@@ -98,7 +98,7 @@
         </li>
         <li class="products__item">
           <a class="products__photo link" href="product.html">
-            <img class="img" src="img/catalog-5.png" width="140" height="112" alt="Cat Energy SLIM 500 г гречка" />
+            <img class="img" src="img/catalog-5.png" width="68" height="78" alt="Cat Energy SLIM 500 г гречка" />
           </a>
           <a class="products__name link" href="product.html">Cat Energy SLIM 500 г</a>
           <dl class="products__info">
@@ -113,7 +113,7 @@
         </li>
         <li class="products__item">
           <a class="products__photo link" href="product.html">
-            <img class="img" src="img/catalog-6.png" width="140" height="112" alt="Cat Energy SLIM 1000 г гречка" />
+            <img class="img" src="img/catalog-6.png" width="84" height="100" alt="Cat Energy SLIM 1000 г гречка" />
           </a>
           <a class="products__name link" href="product.html">Cat Energy SLIM 1000 г</a>
           <dl class="products__info">
@@ -128,7 +128,7 @@
         </li>
         <li class="products__item">
           <a class="products__photo link" href="product.html">
-            <img class="img" src="img/catalog-7.png" width="140" height="112" alt="Cat Energy SLIM 500 г рис" />
+            <img class="img" src="img/catalog-7.png" width="72" height="84" alt="Cat Energy SLIM 500 г рис" />
           </a>
           <a class="products__name link" href="product.html">Cat Energy SLIM 500 г</a>
           <dl class="products__info">
@@ -141,43 +141,51 @@
           </dl>
           <a class="products__link link btn-link" href="cart.html">Заказать</a>
         </li>
-        <li class="products__item products__more">
-          <p class="products__title">
-            Показать еще 100500 товаров
-          </p>
-          <p class="products__info">
-            На самом деле вкусов гораздо больше!
-          </p>
-          <a class="products__link products__link--all link btn-link" href="products.html">Показать все</a>
-        </li>
       </ul>
+      <div class="products__more">
+        <p class="products__subtitle">
+          Показать еще 100500 товаров
+        </p>
+        <p class="products__more-info">
+          На самом деле вкусов гораздо больше!
+        </p>
+        <a class="products__link products__link--all link btn-link" href="products.html">Показать все</a>
+      </div>
     </section>
-    <section class="add-products">
+    <section class="add-products container">
       <h2 class="add-products__title">Дополнительные товары</h2>
       <div class="add-products__wrapper">
         <ul class="add-products__list list">
           <li class="add-products__item">
             <h3 class="add-products__name">Сахарозаменитель</h3>
-            <span class="add-products__size">1 упаковка (100 г)</span>
-            <span class="add-products__price">200 р.</span>
+            <div class="add-products__price-block">
+              <span class="add-products__size">1 упаковка (100 г)</span>
+              <span class="add-products__price">200 р.</span>
+            </div>
             <a class="add-products__link link btn-link" href="products.html">Заказать</a>
           </li>
           <li class="add-products__item">
             <h3 class="add-products__name">Питьевая вода</h3>
-            <span class="add-products__size">5 литров</span>
-            <span class="add-products__price">50 р.</span>
+            <div class="add-products__price-block">
+              <span class="add-products__size">5 литров</span>
+              <span class="add-products__price">50 р.</span>
+            </div>
             <a class="add-products__link link btn-link" href="products.html">Заказать</a>
           </li>
           <li class="add-products__item">
             <h3 class="add-products__name">Молоко</h3>
-            <span class="add-products__size">1 литр</span>
-            <span class="add-products__price">100 р.</span>
+            <div class="add-products__price-block">
+              <span class="add-products__size">1 литр</span>
+              <span class="add-products__price">100 р.</span>
+            </div>
             <a class="add-products__link link btn-link" href="products.html">Заказать</a>
           </li>
           <li class="add-products__item">
             <h3 class="add-products__name">Витамины</h3>
-            <span class="add-products__size">1 упаковка (30 г)</span>
-            <span class="add-products__price">300 р.</span>
+            <div class="add-products__price-block">
+              <span class="add-products__size">1 упаковка (30 г)</span>
+              <span class="add-products__price">300 р.</span>
+            </div>
             <a class="add-products__link link btn-link" href="products.html">Заказать</a>
           </li>
         </ul>
@@ -186,7 +194,7 @@
         </p>
       </div>
     </section>
-    <section class="address">
+    <section class="address container">
       <h2 class="visually-hidden">Адрес</h2>
       <div class="address__wrapper">
         <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
@@ -197,6 +205,9 @@
     </section>
     <section class="address-map">
       <h2 class="visually-hidden">Карта</h2>
+      <iframe class="address-map__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618947335410!5m2!1sru!2sru"
+        width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
     </section>
   </main>
   <footer class="main-footer">

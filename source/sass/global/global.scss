@@ -12,12 +12,6 @@ body {
   font-family: $oswald;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -95,10 +89,6 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-}
-
-.input {
-  appearance: none;
 }
 
 .container {

@@ -1,16 +1,7 @@
-.catalog-main {
-  width: $mobile-width;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
-}
-
 .catalog-main__title {
+  margin: 0;
+  padding-bottom: 41px;
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;

@@ -5,6 +5,10 @@
 }
 
 .add-products__list {
+  &:first-child {
+    border-top: $border-count;
+  }
+
   @media (min-width: $desktop-width) {
     width: 895px;
     margin-right: 80px;
@@ -12,6 +16,9 @@
 }
 
 .add-products__item {
+  border-bottom: $border-count;
+  padding-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     padding: 0 38px;
     padding-bottom: 20px;
@@ -32,6 +39,7 @@
 }
 
 .add-products__name {
+  text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -84,6 +92,8 @@
 }
 
 .add-products__link {
+  margin-top: 15px;
+
   @media (min-width: $tablet-width) {
     width: 632px;
   }
@@ -94,4 +104,9 @@
     margin-top: 15px;
     margin-left: auto;
   }
+}
+
+.add-products__price-block {
+  display: flex;
+  justify-content: space-between;
 }
