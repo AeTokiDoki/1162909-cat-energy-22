@@ -83,6 +83,15 @@ body {
   text-transform: uppercase;
 
   background-color: $basic-green;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-green-hover;
+  }
+
+  &:active {
+    color: $opacity-btn;
+  }
 }
 
 .page-title {

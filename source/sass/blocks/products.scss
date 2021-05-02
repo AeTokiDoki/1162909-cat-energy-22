@@ -190,6 +190,15 @@
 
   background-color: $light-white;
 
+  &:hover,
+  &:focus {
+    background-color: $border-light;
+  }
+
+  &:active {
+    color: $opacity-btn-all;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 105px;
   }
