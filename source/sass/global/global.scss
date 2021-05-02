@@ -106,3 +106,12 @@ body {
     padding: 0 calc(50% - 610px);
   }
 }
+
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.input {
+  appearance: none;
+}
