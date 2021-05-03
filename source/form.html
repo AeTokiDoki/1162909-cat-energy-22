@@ -25,40 +25,43 @@
         <li class="main-nav__item">
           <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__link link">Подбор программы</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active link">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-form container container--form">
-    <header class="main-form__wrapper">
+  <main class="main-form">
+    <header class="main-form__wrapper container--form">
       <h1 class="main-form__title page-title">Подбор программы</h1>
-      <p class="main-form__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+      <p class="main-form__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота
+      </p>
     </header>
-    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form container container--form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form__wrapper">
         <fieldset class="form__group">
           <legend class="visually-hidden">Информация о питомце</legend>
           <p class="form__point option">
             <label class="form__label" for="name">Имя:<sup>*</sup></label>
-            <input class="form__field form__field--name" type="text" inputmode="text" id="name" name="cat-name"
-              placeholder="Барсик">
+            <input class="form__field form__field--name input-number" type="text" inputmode="text" id="name"
+              name="cat-name" placeholder="Барсик">
           </p>
           <p class="form__point option">
             <label class="form__label" for="weight">Вес (кг):<sup>*</sup></label>
-            <input class="form__field" type="number" inputmode="decimal" id="weight" name="cat-weight" placeholder="7">
+            <input class="form__field input-number" type="number" inputmode="decimal" id="weight" name="cat-weight"
+              placeholder="7">
           </p>
           <p class="form__point option">
             <label class="form__label" for="age">Возраст (лет):</label>
-            <input class="form__field" type="number" inputmode="decimal" id="age" name="cat-age" placeholder="7">
+            <input class="form__field input-number" type="number" inputmode="decimal" id="age" name="cat-age"
+              placeholder="7">
           </p>
         </fieldset>
         <fieldset class="form__group form__group--bord">
           <legend class="visually-hidden">Цель программы</legend>
           <ul class="form__sublist list">
             <li class="form__option option">
-              <input class="form__radio input " type="radio" name="version" id="slim-program" checked>
+              <input class="form__radio input" type="radio" name="version" id="slim-program" checked>
               <label class="form__radio-checkbox" for="slim-program">Похудение</label>
             </li>
             <li class="form__option option">
@@ -91,7 +94,8 @@
           <label class="form__label" for="tel">Телефон:<sup>*</sup></label>
           <input class="form__field form__field--tel" type="tel" inputmode="tel" id="tel"
             placeholder="8 (960) 900-60-90">
-          <svg class="form__icon" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="form__icon" width="20" height="21" viewBox="0 0 20 21" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
               <path
                 d="M17.9 9.75275H9.39999V10.9569H17.9L15.8 13.0641L16.7 13.9672L19.8 10.8565C19.8974 10.7263 19.95 10.5678 19.95 10.405C19.95 10.2421 19.8974 10.0837 19.8 9.95344L16.7 6.84277L15.8 7.74587L17.9 9.75275Z"
@@ -121,19 +125,19 @@
         </legend>
         <ul class="form__sublist form__sublist--about list">
           <li class="form__option option">
-            <input class="form__checkbox input " type="checkbox" name="sweetener" id="sweetener" checked>
+            <input class="form__checkbox input" type="checkbox" name="sweetener" id="sweetener" checked>
             <label class="form__type-checkbox" for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="form__option option">
-            <input class="form__checkbox input " type="checkbox" name="water" id="water">
+            <input class="form__checkbox input" type="checkbox" name="water" id="water">
             <label class="form__type-checkbox" for="water">Питьевая вода</label>
           </li>
           <li class="form__option option">
-            <input class="form__checkbox input " type="checkbox" name="milk" id="milk">
+            <input class="form__checkbox input" type="checkbox" name="milk" id="milk">
             <label class="form__type-checkbox" for="milk">Молоко</label>
           </li>
           <li class="form__option option">
-            <input class="form__checkbox input " type="checkbox" name="vitamins" id="vitamins">
+            <input class="form__checkbox input" type="checkbox" name="vitamins" id="vitamins">
             <label class="form__type-checkbox" for="vitamins">Витамины</label>
           </li>
         </ul>
@@ -143,7 +147,7 @@
         <p class="form__note"><sup>*</sup> — Обязательные поля</p>
       </div>
     </form>
-    <section class="address container">
+    <section class="address container--form">
       <h2 class="visually-hidden">Адрес</h2>
       <div class="address__wrapper">
         <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
@@ -154,6 +158,9 @@
     </section>
     <section class="address-map">
       <h2 class="visually-hidden">Карта</h2>
+      <iframe class="address-map__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618947335410!5m2!1sru!2sru"
+        width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
     </section>
   </main>
   <footer class="main-footer">

@@ -12,12 +12,6 @@ body {
   font-family: $oswald;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -89,16 +83,21 @@ input[type="number"]::-webkit-inner-spin-button {
   text-transform: uppercase;
 
   background-color: $basic-green;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-green-hover;
+  }
+
+  &:active {
+    color: $opacity-btn;
+  }
 }
 
 .page-title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-}
-
-.input {
-  appearance: none;
 }
 
 .container {
@@ -115,4 +114,13 @@ input[type="number"]::-webkit-inner-spin-button {
   @media (min-width: $desktop-width) {
     padding: 0 calc(50% - 610px);
   }
+}
+
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.input {
+  appearance: none;
 }
