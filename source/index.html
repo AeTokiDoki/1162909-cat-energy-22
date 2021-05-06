@@ -6,6 +6,9 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/32.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/16.svg">
+  <link rel="apple-touch-icon" href="img/152.svg">
 </head>
 
 <body class="page-body">
@@ -21,7 +24,7 @@
     <nav class="main-nav">
       <ul class="main-nav__list list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active link" href="#">Главная</a>
+          <a class="main-nav__link main-nav__link--active link">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
@@ -37,8 +40,12 @@
     <section class="main-head container">
       <h2 class="main-head__title">Функциональное <br> питание для котов</h2>
       <p class="main-head__subtitle">Занялся собой? Займись котом!</p>
-      <img class="main-head__image img" src="img/index-can-mobile.png" alt="Банка с питанием для кота, со вкусом курицы"
-        width="280" height="270" />
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/index-can.png 1x, img/index-can-2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet-2x 2x">
+        <img class="main-head__image img" src="img/index-can-mobile.png" srcset="img/index-can-mobile-2x.png"
+          alt="Банка с питанием для кота, со вкусом курицы" width="280" height="270" />
+      </picture>
       <a class="main-head__button link btn-link" href="#">Подобрать программу</a>
     </section>
     <section class="catalogs container">
@@ -97,11 +104,14 @@
       <div class="slider">
         <ul class="slider__list list">
           <li class="slider__item slider__item--active">
-            <img class="slider__photo img" src="img/cat-fat-mobile.png" alt="Фото кота до" width="311" height="232" />
+            <picture>
+              <img class="slider__photo img" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile-2x.png"
+                alt="Фото кота до" width="311" height="232" />
+            </picture>
           </li>
           <li class="slider__item">
-            <img class="slider__photo img" src="img/cat-thin-mobile.png" alt="Фото кота после" width="251"
-              height="240" />
+            <img class="slider__photo img" src="img/cat-thin-mobile.png" srcset="img/cat-thin-mobile-2x.png"
+              alt="Фото кота после" width="251" height="240" />
           </li>
         </ul>
         <div class="slider__range">
