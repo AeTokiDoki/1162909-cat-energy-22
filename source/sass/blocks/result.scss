@@ -12,6 +12,16 @@
   &:nth-child(1) {
     margin-right: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(1) {
+      margin-right: 42px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 83px;
+    }
+  }
 }
 
 .result__count {
@@ -70,6 +80,10 @@
       margin-left: 34px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $light-white;
+  }
 }
 
 .result__price {
@@ -84,6 +98,13 @@
     margin-left: auto;
     padding-top: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 430px;
+    margin-left: 0;
+    margin-bottom: 75px;
+  }
 }
 
 .result__title,
@@ -96,6 +117,16 @@
 
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+}
+
+.result__title {
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
 }
 
 .result__cost {
@@ -105,5 +136,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 10px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 35px;
+
+    text-align: center;
   }
 }

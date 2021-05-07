@@ -1,11 +1,34 @@
 .main-head {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 320px;
+    height: 304px;
+    background-color: $green-cat;
+    background-image: url("/img/bg-cat.jpg");
+  }
+
   color: $basic-white;
 
-  background-image: url("../img/bg-cat.jpg");
-  background-repeat: no-repeat;
-
   @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: 780px;
     color: $basic-black;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.main-head__title,
+.main-head__subtitle {
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
   }
 }
 
@@ -13,15 +36,45 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 87px;
+  }
 }
 
 .main-head__subtitle {
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .main-head__image {
-  padding-top: 50px;
+  position: relative;
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    top: 230px;
+    height: 610px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 40%;
+    height: auto;
+  }
 }
 
 .main-head__button {
@@ -36,6 +89,7 @@
     width: 244px;
     height: 54px;
 
+    margin-left: 87px;
     padding-top: 15px;
   }
 }
