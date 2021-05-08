@@ -47,11 +47,16 @@
   margin-bottom: 25px;
 
   color: $dark-grey2;
+
+  &--top {
+    padding-top: 18px;
+  }
 }
 
 .button-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-top: 24px;
   }
 }
 
@@ -61,6 +66,8 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    margin-right: 60px;
+
     width: 285px;
     height: 52px;
 
@@ -73,6 +80,11 @@
 }
 
 .form__note {
+  padding-right: 3px;
+  padding-left: 3px;
+
+  text-transform: none;
+  text-align: center;
   font-family: $arial;
   font-size: 14px;
   line-height: 16px;
@@ -113,7 +125,8 @@
     display: grid;
 
     grid-template-columns: 50% 50%;
-    grid-gap: 10px;
+    grid-column-gap: 29px;
+    grid-row-gap: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -166,7 +179,7 @@
   padding-left: 45px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 65px;
+    padding-left: 58px;
   }
 }
 
@@ -253,7 +266,8 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: -1px;
+    top: -5px;
 
     width: 30px;
     height: 30px;
