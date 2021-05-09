@@ -124,3 +124,33 @@ body {
 .input {
   appearance: none;
 }
+
+.line {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 50%;
+    top: 50px;
+    right: 0;
+
+    height: 2px;
+    background-color: $basic-green;
+
+    z-index: -2;
+
+    @media (min-width: $tablet-width) {
+      top: 65px;
+      width: 100%;
+    }
+  }
+}
+
+.indent {
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+}

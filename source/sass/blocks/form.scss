@@ -12,8 +12,6 @@
 .form__group {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
   border: none;
 
@@ -29,16 +27,42 @@
 }
 
 .form__title {
+  text-transform: none;
+
   padding-right: 5px;
   padding-bottom: 35px;
+  width: 200px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
 
+  background-color: $basic-white;
+
+  z-index: 1;
+
+  &--comment {
+    width: 143px;
+  }
+
+  &--about {
+    width: 160px;
+  }
+
   @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    width: 600px;
+
     font-size: 36px;
     line-height: 36px;
+
+    &--comment {
+      width: 260px;
+    }
+
+    &--about {
+      width: 290px;
+    }
   }
 }
 
@@ -49,7 +73,7 @@
   color: $dark-grey2;
 
   &--top {
-    padding-top: 18px;
+    padding-top: 24px;
   }
 }
 
@@ -101,6 +125,12 @@
   @media (min-width: $tablet-width) {
     border: $border-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+
+    height: 100%;
+  }
 }
 
 .form__group--contacts {
@@ -109,8 +139,14 @@
   padding-bottom: 20px;
 
   @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-point-wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -121,6 +157,7 @@
 .form__sublist--about {
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-left: 40px;
 
     display: grid;
 
@@ -143,6 +180,10 @@
   margin: 0;
   margin-bottom: 15px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
   &--desktop {
     @media (min-width: $desktop-width) {
       width: 570px;
@@ -153,7 +194,7 @@
 .form__field {
   position: relative;
   flex-grow: 1;
-  padding: 11px;
+  padding: 10px;
 
   text-transform: uppercase;
   border: $border-form;
@@ -165,6 +206,17 @@
   &:focus,
   &:active {
     border: $border-form-focus;
+  }
+
+  &:invalid {
+    border: $border-invalid;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -245,7 +297,7 @@
 
 .right {
   @media (min-width: $desktop-width) {
-    margin-right: 80px;
+    margin-right: 40px;
   }
 }
 
@@ -260,6 +312,10 @@
 
   text-transform: uppercase;
   border: $border-form;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
 }
 
 .form__type-checkbox {
