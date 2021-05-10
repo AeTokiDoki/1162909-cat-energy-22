@@ -1,7 +1,117 @@
 .slider {
-  width: 50%;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
+.slider__range {
+  display: flex;
 }
 
 .slider__button {
+  text-transform: uppercase;
+  font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    border-bottom: 1px dotted #bebebe;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #bebebe;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+}
+
+.slider__controls {
+  position: relative;
+
+  margin-left: 20px;
+  margin-right: 17px;
+
+  width: 82px;
+  height: 12px;
+
+  border: $border-count;
+  background-color: $basic-white;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+
+    width: 428px;
+    height: 6px;
+
+    background-color: $slider-color;
+    border: 0;
+  }
+}
+
+.slider__bar {
+  position: absolute;
+  left: 3px;
+  top: 2px;
+
+  width: 35px;
+  height: 6px;
+
+  background-color: $basic-green;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    height: 34px;
+    width: 50%;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &::before {
+      right: -5px;
+      top: -4px;
+
+      width: 8px;
+      height: 8px;
+
+      background-color: $basic-green;
+
+      z-index: 10;
+    }
+
+    &::after {
+      top: -17px;
+      right: -18px;
+
+      width: 34px;
+      height: 34px;
+
+      border: $border-count;
+      background-color: $basic-white;
+    }
+
+    &:active::after {
+      border: $active-border;
+    }
+
+    &:hover::after {
+      filter: $shadow-slider;
+    }
+  }
 }

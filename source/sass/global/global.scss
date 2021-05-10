@@ -103,10 +103,6 @@ body {
 .container {
   padding: 0 calc(50% - 140px);
 
-  &--form {
-    padding: 0 calc(50% - 140px);
-  }
-
   @media (min-width: $tablet-width) {
     padding: 0 calc(50% - 354px);
 
@@ -117,10 +113,6 @@ body {
 
   @media (min-width: $desktop-width) {
     padding: 0 calc(50% - 610px);
-
-    &--form {
-      padding: 0 calc(50% - 610px);
-    }
   }
 }
 
@@ -131,4 +123,34 @@ body {
 
 .input {
   appearance: none;
+}
+
+.line {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 50%;
+    top: 50px;
+    right: 0;
+
+    height: 2px;
+    background-color: $basic-green;
+
+    z-index: -2;
+
+    @media (min-width: $tablet-width) {
+      top: 65px;
+      width: 100%;
+    }
+  }
+}
+
+.indent {
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
 }

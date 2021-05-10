@@ -6,7 +6,7 @@
     position: absolute;
     z-index: -1;
     top: 0;
-    width: 320px;
+    width: $mobile-width;
     height: 304px;
     background-color: $green-cat;
     background-image: url("/img/bg-cat.jpg");
