@@ -226,19 +226,10 @@
 
     &--left {
       bottom: 315px;
-      left: 92px;
-    }
-
-    &--right {
-      left: 85px;
     }
   }
 
   @media (min-width: $desktop-width) {
     left: 44px;
-
-    &--left {
-      left: 52px;
-    }
   }
 }
