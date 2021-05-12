@@ -1,4 +1,5 @@
 .address {
+  position: relative;
   background-color: $basic-white;
 }
 
@@ -10,8 +11,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 570px;
-    max-height: 201px;
+    position: absolute;
+
+    top: 95px;
+    left: 110px;
+
+    height: 201px;
+    width: 570px;
+    padding: 30px 85px 51px 51px;
+
+    z-index: 2;
+
+    background-color: $basic-white;
   }
 }
 
@@ -24,6 +35,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .address__info-wrapper {
@@ -35,4 +53,10 @@
   font-size: 14px;
   line-height: 20px;
   color: $dark-grey;
+
+  @media (min-width: $desktop-width) {
+    width: 155px;
+
+    font-size: 16px;
+  }
 }
