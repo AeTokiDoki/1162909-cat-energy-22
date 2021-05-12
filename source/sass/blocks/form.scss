@@ -45,7 +45,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
-    margin-left: calc(50% - 315px - 40px);
+    margin-left: calc(50% - 315px - $pp-indent);
 
     padding: 0 40px;
 
@@ -54,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: calc(50% - 610px - 40px);
+    margin-left: calc(50% - 610px - $pp-indent);
   }
 }
 
