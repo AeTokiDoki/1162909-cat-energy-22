@@ -127,15 +127,14 @@ body {
 
 .line {
   position: relative;
-  z-index: 1;
 
   &::after {
     content: "";
 
     position: absolute;
-    width: 50%;
-    top: 50px;
-    right: 0;
+    width: 100vw;
+    top: 15px;
+    left: 0;
 
     height: 2px;
     background-color: $basic-green;
@@ -143,14 +142,13 @@ body {
     z-index: -2;
 
     @media (min-width: $tablet-width) {
-      top: 65px;
-      width: 100%;
-    }
-  }
-}
+      top: 22px;
 
-.indent {
-  @media (min-width: $tablet-width) {
-    padding-left: 40px;
+      left: calc((690px - 100vw) / 2);
+    }
+
+    @media (min-width: $desktop-width) {
+      left: calc((1300px - 100vw) / 2);
+    }
   }
 }

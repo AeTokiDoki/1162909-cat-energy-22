@@ -1,24 +1,28 @@
 .page-body {
-  @media (min-width: $desktop-width) {
-    &::before {
-      content: "";
+  overflow-x: hidden;
 
-      position: absolute;
-      z-index: -10;
-      top: 0;
-      right: 0;
+  &--index {
+    @media (min-width: $desktop-width) {
+      &::before {
+        content: "";
 
-      width: 50%;
-      height: 694px;
+        position: absolute;
+        z-index: -10;
+        top: 0;
+        right: 0;
 
-      background-color: $bg-cat;
-      background-image: url("../img/header-bg-desktop.jpg");
-      background-repeat: no-repeat;
-      background-size: auto 694px;
-      background-position-x: right;
+        width: 50%;
+        height: 694px;
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/header-bg-desktop-2x.jpg");
+        background-color: $bg-cat;
+        background-image: url("../img/header-bg-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: auto 694px;
+        background-position-x: right;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/header-bg-desktop-2x.jpg");
+        }
       }
     }
   }

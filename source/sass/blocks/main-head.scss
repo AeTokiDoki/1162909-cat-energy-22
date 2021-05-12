@@ -32,6 +32,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 480px;
+  }
 }
 
 .main-head__title,
