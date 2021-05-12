@@ -8,10 +8,10 @@
   color: $basic-white;
 
   background-color: $basic-green;
-  background-image: url("/img/bonus.jpg");
+  background-image: url("../img/bonus.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/bonus-x2.jpg");
+    background-image: url("../img/bonus-x2.jpg");
     background-size: cover;
   }
 
@@ -20,10 +20,10 @@
     width: 100%;
     min-height: 200px;
 
-    background-image: url("/img/bonus-tablet.jpg");
+    background-image: url("../img/bonus-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/bonus-tablet-x2.jpg");
+      background-image: url("../img/bonus-tablet-x2.jpg");
     }
   }
 
@@ -31,10 +31,10 @@
     width: 245px;
     flex-direction: column;
 
-    background-image: url("/img/bonus-desktop.jpg");
+    background-image: url("../img/bonus-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/bonus-desktop-x2.jpg");
+      background-image: url("../img/bonus-desktop-x2.jpg");
     }
   }
 }
