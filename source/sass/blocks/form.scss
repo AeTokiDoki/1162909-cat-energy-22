@@ -192,20 +192,12 @@
   text-transform: uppercase;
   border: $border-form;
 
-  &:invalid ~ .form__icon--email {
+  &:invalid + .form__icon {
     stroke: $red;
   }
 
-  &:invalid ~ .form__icon--phone {
-    fill: $red;
-  }
-
-  &:focus ~ .form__icon--email {
+  &:focus + .form__icon {
     stroke: $basic-green;
-  }
-
-  &:focus ~ .form__icon--phone {
-    fill: $basic-green;
   }
 
   &:hover {
@@ -310,7 +302,7 @@
   width: 20px;
   height: 14px;
   fill: none;
-  stroke: #222222;
+  stroke: $dark-grey2;
 
   @media (min-width: $tablet-width) {
     width: 18px;
