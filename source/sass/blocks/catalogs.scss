@@ -1,5 +1,9 @@
 .catalogs {
   margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
 
 .catalogs__list {
@@ -12,6 +16,7 @@
 .catalogs__item {
   position: relative;
 
+  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
@@ -26,7 +31,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 22px;
+    top: 24px;
     left: 20px;
 
     width: 50px;
@@ -39,8 +44,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 19px;
-    left: 10px;
+    top: 21px;
+    left: 13px;
 
     width: 67px;
     height: 50px;
@@ -139,6 +144,7 @@
 }
 
 .catalogs__title {
+  padding-left: 33px;
   padding-bottom: 15px;
   padding-right: 20px;
   margin: 0;
@@ -150,7 +156,7 @@
   text-transform: uppercase;
 
   &--right {
-    padding-right: 0;
+    padding-left: 58px;
   }
 
   @media (min-width: $tablet-width) {
@@ -205,7 +211,7 @@
   display: inline-block;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-right: 100px;
+  padding-right: 84px;
 
   text-transform: uppercase;
   line-height: 16px;

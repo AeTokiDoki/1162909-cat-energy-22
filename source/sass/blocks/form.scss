@@ -27,11 +27,15 @@
 }
 
 .form__title {
+  display: inline-flex;
+
   text-transform: none;
 
-  padding-right: 5px;
-  padding-bottom: 35px;
-  width: 200px;
+  padding-right: 22px;
+  margin-right: 80px;
+
+  margin-bottom: 35px;
+  margin-left: calc(50% - 140px);
 
   font-weight: 400;
   font-size: 24px;
@@ -39,30 +43,18 @@
 
   background-color: $basic-white;
 
-  z-index: 1;
-
-  &--comment {
-    width: 143px;
-  }
-
-  &--about {
-    width: 160px;
-  }
-
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
-    width: 600px;
+    margin-bottom: 35px;
+    margin-left: calc(50% - 315px - $pp-indent);
+
+    padding: 0 40px;
 
     font-size: 36px;
     line-height: 36px;
+  }
 
-    &--comment {
-      width: 260px;
-    }
-
-    &--about {
-      width: 290px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-left: calc(50% - 610px - $pp-indent);
   }
 }
 
@@ -151,13 +143,14 @@
 }
 
 .form__sublist {
-  padding: 0 25px;
+  @media (min-width: $tablet-width) {
+    padding: 0 25px;
+  }
 }
 
 .form__sublist--about {
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-left: 40px;
 
     display: grid;
 
@@ -312,10 +305,6 @@
 
   text-transform: uppercase;
   border: $border-form;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 40px;
-  }
 }
 
 .form__type-checkbox {

@@ -1,20 +1,32 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-top: 16px;
+  }
+}
+
 .main-nav__list {
-  display: flex;
-  flex-direction: column;
+  display: none;
+
   min-height: 198px;
 
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
   }
 }
 
 .main-nav__item {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
 
   text-align: center;
   border-bottom: 1px solid $border-light;
@@ -32,6 +44,9 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+
     font-weight: 400;
 
     &:hover,
@@ -55,6 +70,19 @@
       bottom: 0;
       height: 2px;
       background-color: $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--index {
+      color: $basic-white;
+    }
+
+    &--index::after {
+      background-color: $basic-white;
     }
   }
 }

@@ -19,6 +19,7 @@ $opacity-btn-all: rgba(0, 0, 0, 0.3);
 
 $green-cat: rgba(104, 183, 56, 0.85);
 
+$bg-cat: #65a93c;
 $active-border: 1px solid #68b738;
 $border-invalid: 2px solid #ff8282;
 $border-menu: 2px solid #68b738;
@@ -29,6 +30,7 @@ $border-count: 1px solid #cdcdcd;
 $border-form: 1px solid #e7e7e7;
 $border-form-focus: 2px solid #444444;
 $border-add: 2px solid #f2f2f2;
+$border-btn: 1px dotted #bebebe;
 
 $checkbox-hover: 1px solid #bababa;
 $shadow-checkbox: 0 0 5px #4d90fe;
@@ -43,6 +45,8 @@ $arial: "Arial", sans-serif;
 
 $mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 1300px;
 $mobile-width-only: 767px;
 $cart-width: 245px;
+
+$pp-indent: 40px;
