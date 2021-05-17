@@ -7,7 +7,7 @@
         content: "";
 
         position: absolute;
-        z-index: -10;
+        z-index: -1;
         top: 0;
         right: 0;
 
@@ -18,7 +18,7 @@
         background-image: url("../img/header-bg-desktop.jpg");
         background-repeat: no-repeat;
         background-size: auto 694px;
-        background-position-x: right;
+        background-position-x: left;
 
         @media (min-resolution: 2dppx) {
           background-image: url("../img/header-bg-desktop-2x.jpg");
