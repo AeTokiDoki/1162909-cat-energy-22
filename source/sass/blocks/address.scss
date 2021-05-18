@@ -1,6 +1,10 @@
 .address {
   position: relative;
   background-color: $basic-white;
+
+  &--bg {
+    background-color: $light-white;
+  }
 }
 
 .address__wrapper {
