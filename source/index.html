@@ -118,25 +118,22 @@
               <source media="(min-width: 1300px)" srcset="img/before-desktop.png 1x, img/before-desktop-2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet-2x.png 2x">
               <img class="slider__photo img" src="img/before-mobile.png" srcset="img/before-mobile-2x.png"
-                alt="Фото кота до" width="311" height="232" />
+                alt="Фото кота до" width="320" height="240" />
             </picture>
           </li>
           <li class="slider__item">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/after-desktop.png 1x, img/after-desktop-2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet-2x.png 2x">
-              <img class="slider__photo img" src="img/after-mobile.png" srcset="img/after-mobile-2x.png"
-                alt="Фото кота после" width="251" height="240" />
+              <img class="slider__photo  slider__photo--right img" src="img/after-mobile.png"
+                srcset="img/after-mobile-2x.png" alt="Фото кота после" width="320" height="240" />
             </picture>
           </li>
         </ul>
-        <div class="slider__range">
-          <button class="slider__button slider__button--active button" type="button"
+        <div class="slider__controls">
+          <button class="slider__button slider__button--before button" type="button"
             aria-label="Переключает на было">Было</button>
-          <div class="slider__controls">
-            <div class="slider__scale">
-              <div class="slider__bar"></div>
-            </div>
+          <div class="slider__scale">
             <div class="slider__toggle">
               <span class="visually-hidden">Переключатель слайдера</span>
             </div>
@@ -196,6 +193,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
