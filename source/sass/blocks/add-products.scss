@@ -121,7 +121,12 @@
 }
 
 .add-products__price {
+  @media (min-width: $tablet-width) {
+    margin-left: 48px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-left: 0;
     text-align: right;
   }
 }
