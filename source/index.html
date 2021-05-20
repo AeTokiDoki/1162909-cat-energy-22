@@ -49,8 +49,12 @@
       <h2 class="main-head__title">Функциональное <br> питание для котов</h2>
       <p class="main-head__subtitle">Занялся собой? Займись котом!</p>
       <picture>
+        <source media="(min-width: 1300px)" srcset="img/index-can.webp 1x, img/index-can-2x.webp 2x" type="image/webp">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet-2x.png 2x"
+          type="image/webp">
         <source media="(min-width: 1300px)" srcset="img/index-can.png 1x, img/index-can-2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet-2x 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet-2x.png 2x">
+        <source srcset="img/index-can-mobile.webp, img/index-can-mobile-2x.webp" type="image/webp">
         <img class="main-head__image img" src="img/index-can-mobile.png" srcset="img/index-can-mobile-2x.png"
           alt="Банка с питанием для кота, со вкусом курицы" width="280" height="270" />
       </picture>
@@ -115,16 +119,26 @@
         <ul class="slider__list list">
           <li class="slider__item slider__item--active">
             <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop.webp 1x, img/before-desktop-2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet-2x.webp 2x"
+                type="image/webp">
               <source media="(min-width: 1300px)" srcset="img/before-desktop.png 1x, img/before-desktop-2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet-2x.png 2x">
+              <source srcset="img/before-mobile.webp, img/before-mobile-2x.webp" type="image/webp" />
               <img class="slider__photo img" src="img/before-mobile.png" srcset="img/before-mobile-2x.png"
                 alt="Фото кота до" width="320" height="240" />
             </picture>
           </li>
           <li class="slider__item">
             <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop.webp 1x, img/after-desktop-2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet-2x.webp 2x"
+                type="image/webp">
               <source media="(min-width: 1300px)" srcset="img/after-desktop.png 1x, img/after-desktop-2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet-2x.png 2x">
+              <source srcset="img/after-mobile.webp, img/after-mobile-2x.webp" type="image/webp" />
               <img class="slider__photo  slider__photo--right img" src="img/after-mobile.png"
                 srcset="img/after-mobile-2x.png" alt="Фото кота после" width="320" height="240" />
             </picture>
