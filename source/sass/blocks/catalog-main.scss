@@ -1,11 +1,17 @@
 .catalog-main__title {
   margin: 0;
   padding-bottom: 41px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 83px;
+    margin-bottom: 125px;
+    margin-top: 26px;
 
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
   }
 }

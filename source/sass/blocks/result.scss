@@ -10,10 +10,10 @@
   flex-direction: column;
 
   &:nth-child(1) {
-    margin-right: 30px;
+    margin-right: 32px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     &:nth-child(1) {
       margin-right: 42px;
     }
@@ -22,10 +22,14 @@
       margin-right: 83px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 32px;
+  }
 }
 
 .result__count {
-  padding-top: 10px;
+  padding-top: 13px;
 
   width: 124px;
   height: 56px;
@@ -87,6 +91,8 @@
 }
 
 .result__price {
+  padding-top: 4px;
+
   display: flex;
   margin: 0 auto;
 
@@ -102,6 +108,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     width: 430px;
+    padding-top: 35px;
     margin-left: 0;
     margin-bottom: 75px;
   }
@@ -124,6 +131,10 @@
 }
 
 .result__title {
+  @media (min-width: $tablet-width) {
+    padding-top: 11px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 10px;
   }
