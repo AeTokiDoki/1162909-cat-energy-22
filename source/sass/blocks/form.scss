@@ -1,4 +1,5 @@
 .form {
+  overflow-x: hidden;
   text-transform: uppercase;
 }
 
@@ -272,16 +273,16 @@
   }
 
   &:hover {
-    border: $border-count;
+    outline: $border-count;
   }
 
   &:focus,
   &:active {
-    border: $border-form-focus;
+    outline: $border-form-focus;
   }
 
   &:invalid {
-    border: $border-invalid;
+    outline: $border-invalid;
   }
 
   @media (min-width: $tablet-width) {
