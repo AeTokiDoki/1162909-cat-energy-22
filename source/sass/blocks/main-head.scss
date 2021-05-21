@@ -14,10 +14,11 @@
     width: 100%;
     height: 302px;
 
-    background-color: $green-cat;
+    background-color: $green-bg-main;
     background-image: url("../img/header-bg-mobile.jpg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/header-bg-mobile-2x.jpg");

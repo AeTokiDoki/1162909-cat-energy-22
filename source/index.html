@@ -5,10 +5,12 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="img/32.svg">
   <link rel="icon" type="image/png" sizes="16x16" href="img/16.svg">
   <link rel="apple-touch-icon" href="img/152.svg">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page-body page-body--index">
@@ -23,10 +25,10 @@
     <button class="page-header__button button" type="button">
       <span class="visually-hidden">Открыть меню</span>
       <svg class="main-navigation__icon-menu" width="24" height="18">
-        <use xlink:href="sprite.svg#icon-menu"></use>
+        <use xlink:href="img/sprite.svg#icon-menu"></use>
       </svg>
       <svg class="main-navigation__icon-cross" width="20" height="20">
-        <use xlink:href="sprite.svg#icon-cross"></use>
+        <use xlink:href="img/sprite.svg#icon-cross"></use>
       </svg>
     </button>
     <nav class="main-nav">
@@ -49,8 +51,12 @@
       <h2 class="main-head__title">Функциональное <br> питание для котов</h2>
       <p class="main-head__subtitle">Занялся собой? Займись котом!</p>
       <picture>
+        <source media="(min-width: 1300px)" srcset="img/index-can.webp 1x, img/index-can-2x.webp 2x" type="image/webp">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet-2x.png 2x"
+          type="image/webp">
         <source media="(min-width: 1300px)" srcset="img/index-can.png 1x, img/index-can-2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet-2x 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet-2x.png 2x">
+        <source srcset="img/index-can-mobile.webp, img/index-can-mobile-2x.webp" type="image/webp">
         <img class="main-head__image img" src="img/index-can-mobile.png" srcset="img/index-can-mobile-2x.png"
           alt="Банка с питанием для кота, со вкусом курицы" width="280" height="270" />
       </picture>
@@ -115,16 +121,26 @@
         <ul class="slider__list list">
           <li class="slider__item slider__item--active">
             <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop.webp 1x, img/before-desktop-2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet-2x.webp 2x"
+                type="image/webp">
               <source media="(min-width: 1300px)" srcset="img/before-desktop.png 1x, img/before-desktop-2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet-2x.png 2x">
+              <source srcset="img/before-mobile.webp, img/before-mobile-2x.webp" type="image/webp" />
               <img class="slider__photo img" src="img/before-mobile.png" srcset="img/before-mobile-2x.png"
                 alt="Фото кота до" width="320" height="240" />
             </picture>
           </li>
           <li class="slider__item">
             <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop.webp 1x, img/after-desktop-2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet-2x.webp 2x"
+                type="image/webp">
               <source media="(min-width: 1300px)" srcset="img/after-desktop.png 1x, img/after-desktop-2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet-2x.png 2x">
+              <source srcset="img/after-mobile.webp, img/after-mobile-2x.webp" type="image/webp" />
               <img class="slider__photo  slider__photo--right img" src="img/after-mobile.png"
                 srcset="img/after-mobile-2x.png" alt="Фото кота после" width="320" height="240" />
             </picture>
@@ -164,21 +180,21 @@
       <li class="main-footer__item">
         <a class="main-footer__link link" href="#" aria-label="Мы Вконтакте">
           <svg class="main-footer__link-icon main-footer__link-icon--vk" width="23" height="16">
-            <use xlink:href="sprite.svg#icon-vk"></use>
+            <use xlink:href="img/sprite.svg#icon-vk"></use>
           </svg>
         </a>
       </li>
       <li class="main-footer__item">
         <a class="main-footer__link link" href="#" aria-label="Мы в Инстаграме">
           <svg class="main-footer__link-icon main-footer__link-icon--inst" width="16" height="16">
-            <use xlink:href="sprite.svg#icon-inst"></use>
+            <use xlink:href="img/sprite.svg#icon-inst"></use>
           </svg>
         </a>
       </li>
       <li class="main-footer__item">
         <a class="main-footer__link link" href="#" aria-label="Мы в Фейсбуке">
           <svg class="main-footer__link-icon main-footer__link-icon--fb" width="11" height="18">
-            <use xlink:href="sprite.svg#icon-fb"></use>
+            <use xlink:href="img/sprite.svg#icon-fb"></use>
           </svg>
         </a>
       </li>
@@ -188,12 +204,12 @@
         aria-label="Ссылка на Онлайн‑курс HTML и CSS. Адаптивная вёрстка и автоматизация">
         <p class="copyright__text"> HTML Academy</p>
         <svg class="copyright__icon" width="27" height="34">
-          <use xlink:href="sprite.svg#academy-icon"></use>
+          <use xlink:href="img/sprite.svg#academy-icon"></use>
         </svg>
       </a>
     </div>
   </footer>
-  <script src="js/index.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

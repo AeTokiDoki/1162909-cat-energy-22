@@ -149,6 +149,7 @@
 
 .add-products__price-block {
   display: flex;
+  justify-content: space-between;
 
   @media (min-width: $desktop-width) {
     margin-right: 30px;
