@@ -309,6 +309,7 @@
 
 .form__field--tel,
 .form__field--email {
+  padding-right: 37px;
   padding-left: 11px;
 
   @media (min-width: $tablet-width) {
