@@ -24,10 +24,10 @@
     </a>
     <button class="page-header__button button" type="button">
       <span class="visually-hidden">Открыть меню</span>
-      <svg class="main-navigation__icon-menu" width="24" height="18">
+      <svg class="page-header__icon-menu" width="24" height="18">
         <use xlink:href="img/sprite.svg#icon-menu"></use>
       </svg>
-      <svg class="main-navigation__icon-cross" width="20" height="20">
+      <svg class="page-header__icon-cross" width="20" height="20">
         <use xlink:href="img/sprite.svg#icon-cross"></use>
       </svg>
     </button>
@@ -148,7 +148,7 @@
           </ul>
         </div>
       </fieldset>
-      <div class="button-wrapper container container--form">
+      <div class="form__button-wrapper container container--form">
         <button class="form__button button btn-link" type="submit">Отправить заявку</button>
         <p class="form__note"><sup>*</sup> — Обязательные поля</p>
       </div>
@@ -158,7 +158,7 @@
       <div class="address__wrapper">
         <p class="address__text">Приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="address__info-wrapper">
-          ул. Большая Конюшенная, д. 19/8 <span class="bottom"> Санкт-Петербург</span>
+          ул. Большая Конюшенная, д. 19/8 <span class="address__bottom"> Санкт-Петербург</span>
         </address>
       </div>
     </section>
@@ -170,7 +170,9 @@
     </section>
   </main>
   <footer class="main-footer container">
-    <img class="main-footer__image img" src="img/logo-header-mobile.svg" alt="Cat Energy" width="101" height="18" />
+    <a class="main-footer__logo" href="index.html">
+      <img class="main-footer__image img" src="img/logo-header-mobile.svg" alt="Cat Energy" width="101" height="18" />
+    </a>
     <ul class="main-footer__list list">
       <li class="main-footer__item">
         <a class="main-footer__link link" href="#" aria-label="Мы Вконтакте">

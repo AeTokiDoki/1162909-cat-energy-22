@@ -33,22 +33,6 @@
   }
 }
 
-.logo__image {
-  margin-bottom: 16px;
-
-  @media (min-width: $tablet-width) {
-    width: 174px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 202px;
-  }
-}
-
-.logo__image--text {
-  margin-top: 10px;
-}
-
 .page-header__button {
   display: none;
 

@@ -85,16 +85,31 @@
 }
 
 .add-products__title {
-  margin-right: 0;
+  display: inline-flex;
+
+  margin-left: calc(50% - 140px);
+  padding-right: 22px;
   margin-top: 25px;
+  margin-bottom: 36px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
 
+  background-color: $basic-white;
+
   @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    margin-left: calc(50% - 315px - #{$pp-indent});
+
+    padding: 0 40px;
+
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: calc(50% - 610px - #{$pp-indent});
   }
 }
 

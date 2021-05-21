@@ -24,10 +24,10 @@
     </a>
     <button class="page-header__button button" type="button">
       <span class="visually-hidden">Открыть меню</span>
-      <svg class="main-navigation__icon-menu" width="24" height="18">
+      <svg class="page-header__icon-menu" width="24" height="18">
         <use xlink:href="img/sprite.svg#icon-menu"></use>
       </svg>
-      <svg class="main-navigation__icon-cross" width="20" height="20">
+      <svg class="page-header__icon-cross" width="20" height="20">
         <use xlink:href="img/sprite.svg#icon-cross"></use>
       </svg>
     </button>
@@ -56,7 +56,7 @@
           type="image/webp">
         <source media="(min-width: 1300px)" srcset="img/index-can.png 1x, img/index-can-2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet-2x.png 2x">
-        <source srcset="img/index-can-mobile.webp, img/index-can-mobile-2x.webp" type="image/webp">
+        <source srcset="img/index-can-mobile.webp 1x, img/index-can-mobile-2x.webp 2x" type="image/webp">
         <img class="main-head__image img" src="img/index-can-mobile.png" srcset="img/index-can-mobile-2x.png"
           alt="Банка с питанием для кота, со вкусом курицы" width="280" height="270" />
       </picture>
@@ -67,13 +67,15 @@
       <ul class="catalogs__list list">
         <li class="catalogs__item catalogs__item--slim">
           <h3 class="catalogs__title">Похудение</h3>
-          <p class="catalogs__text text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+          <p class="catalogs__text text">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a href="#" class="catalogs__link link">Каталог slim</a>
         </li>
         <li class="catalogs__item catalogs__item--pro">
           <h3 class="catalogs__title catalogs__title--right">Набор массы</h3>
-          <p class="catalogs__text catalogs__text--pro text">Заработать авторитет среди дворовых котов и даже собак?
+          <p class="catalogs__text catalogs__text--pro text">Заработать авторитет среди дворовых котов и даже
+            собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a href="#" class="catalogs__link link">Каталог pro</a>
         </li>
@@ -127,7 +129,7 @@
                 type="image/webp">
               <source media="(min-width: 1300px)" srcset="img/before-desktop.png 1x, img/before-desktop-2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet-2x.png 2x">
-              <source srcset="img/before-mobile.webp, img/before-mobile-2x.webp" type="image/webp" />
+              <source srcset="img/before-mobile.webp 1x, img/before-mobile-2x.webp 2x" type="image/webp" />
               <img class="slider__photo img" src="img/before-mobile.png" srcset="img/before-mobile-2x.png"
                 alt="Фото кота до" width="320" height="240" />
             </picture>
@@ -140,7 +142,7 @@
                 type="image/webp">
               <source media="(min-width: 1300px)" srcset="img/after-desktop.png 1x, img/after-desktop-2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet-2x.png 2x">
-              <source srcset="img/after-mobile.webp, img/after-mobile-2x.webp" type="image/webp" />
+              <source srcset="img/after-mobile.webp 1x, img/after-mobile-2x.webp 2x" type="image/webp" />
               <img class="slider__photo  slider__photo--right img" src="img/after-mobile.png"
                 srcset="img/after-mobile-2x.png" alt="Фото кота после" width="320" height="240" />
             </picture>
@@ -150,9 +152,9 @@
           <button class="slider__button slider__button--before button" type="button"
             aria-label="Переключает на было">Было</button>
           <div class="slider__scale">
-            <div class="slider__toggle">
+            <a href="#" class="slider__toggle">
               <span class="visually-hidden">Переключатель слайдера</span>
-            </div>
+            </a>
           </div>
           <button class="slider__button slider__button--after button">Стало</button>
         </div>
@@ -163,7 +165,7 @@
       <div class="address__wrapper">
         <p class="address__text">Приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="address__info-wrapper">
-          ул. Большая Конюшенная, д. 19/8 <span class="bottom"> Санкт-Петербург</span>
+          ул. Большая Конюшенная, д. 19/8 <span class="address__bottom"> Санкт-Петербург</span>
         </address>
       </div>
     </section>
@@ -175,7 +177,9 @@
     </section>
   </main>
   <footer class="main-footer container">
-    <img class="main-footer__image img" src="img/logo-header-mobile.svg" alt="Cat Energy" width="101" height="18" />
+    <a class="main-footer__logo">
+      <img class="main-footer__image img" src="img/logo-header-mobile.svg" alt="Cat Energy" width="101" height="18" />
+    </a>
     <ul class="main-footer__list list">
       <li class="main-footer__item">
         <a class="main-footer__link link" href="#" aria-label="Мы Вконтакте">
