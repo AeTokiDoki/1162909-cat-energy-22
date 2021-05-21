@@ -287,16 +287,21 @@
 .products__image {
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 305px;
+    top: -70px;
     left: 80px;
     width: auto;
 
     &--left {
-      bottom: 315px;
+      top: -50px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    top: -81px;
     left: 44px;
+
+    &--left {
+      top: -50px;
+    }
   }
 }
